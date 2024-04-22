@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Programación Web Avanzada 2024
 
-## Available Scripts
+<h3>Trabajo Práctico N°1: React</h3>
+Aplicación de Lista de Tareas (To-Do List)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Grupo 4</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Borghese Nicolás FAI-997
+- Blanco Julián FAI-3858
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Descripción de la aplicación</h3>
 
-### `npm run build`
+La aplicación es un sitio web para administrar las tareas de un usuario. Permite agregar nuevas tareas, cambiar su estado y borrarlas. Cuenta con un contador para saber cuantas tareas se encuentran completas y un filtro para buscarlas más rápido.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Instrucciones de instalación</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Ubicar la terminal en el directorio deseado para instalar el proyecto y clonar el repositorio ejecutando en consola el comando: `git clone https://github.com/juliaanbl/To-DoList.git`
+2. Acceder a la carpeta donde se instalo el proyecto con el comando: `cd To-DoList`
+3. Instalar las dependencias necesarias para el proyecto ejecutando el comando: `npm install`
+4. Ejecutar la aplicación utilizando el comando `npm start`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h3>Funcionamiento de los archivos iniciales</h3>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h4>index.js</h4>
+Este archivo es el punto de entrada de la aplicación React. Su función principal es montar el componente de React principal (por ejemplo, App) al DOM usando ReactDOM. Es aquí donde React se "engancha" al HTML, específicamente a un elemento con un id generalmente llamado root. Aquí también es común envolver la aplicación en proveedores de contexto o envolverla con enrutadores o temas si se utilizan.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h4>App.js</h4>
+Este es el componente raíz de la aplicación. Esencialmente, sirve como contenedor para todos los otros componentes de la aplicación. Aquí se define la estructura inicial de la aplicación y se realizan los enrutamientos y llamadas a otros componentes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h4>index.css</h4>
+Este archivo contiene los estilos CSS globales de la aplicación. Al utilizar import './index.css'; en el archivo index.js, estos estilos se aplicaran a todos los componentes que se importen globalmente.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4>package.json</h4>
+Este archivo es un manifiesto del proyecto que incluye metadatos (como el nombre del proyecto, versión, descripción, etc.), además de listar las dependencias de npm que necesita el proyecto.
